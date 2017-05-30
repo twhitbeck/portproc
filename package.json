@@ -1,0 +1,23 @@
+{
+  "name": "portproc",
+  "version": "1.0.0",
+  "description": "Utility to the find ID of a process using a given port, or the port used by a given process",
+  "main": "index.js",
+  "keywords": [
+    "port",
+    "process",
+    "pid",
+    "netstat",
+    "network",
+    "utility"
+  ],
+  "author": "Daniel Baker (https://github.com/coffeedoughnuts)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0"
+  }
+}
