@@ -14,10 +14,14 @@
   "author": "Daniel Baker (https://github.com/coffeedoughnuts)",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
     "eslint": "^3.19.0"
+  },
+  "bin": {
+    "portproc": "cli.js"
   }
 }
