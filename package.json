@@ -1,6 +1,6 @@
 {
   "name": "portproc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to the find what port a process is using; or what process is using a port",
   "main": "index.js",
   "repository": "coffeedoughnuts/portproc",
