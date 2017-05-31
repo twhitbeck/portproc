@@ -1,7 +1,7 @@
 {
   "name": "portproc",
   "version": "1.0.0",
-  "description": "Utility to the find ID of a process using a given port, or the port used by a given process",
+  "description": "Utility to the find what port a process is using; or what process is using a port",
   "main": "index.js",
   "keywords": [
     "port",

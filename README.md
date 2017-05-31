@@ -6,11 +6,33 @@ A utility to:
 
 ## Installation
 
+For use as a command line tool:
+
 ```
-npm install portproc
+npm install --global portproc
 ```
 
-## Usage
+For use as a library:
+
+```
+npm install --save portproc
+```
+
+## Command Line Usage
+
+To find out what port a process is using you just supply the process id:
+
+```
+portproc 54321
+```
+
+And to find out what process is using a given port, prefix the port with a colon:
+
+```
+portproc :3000
+```
+
+## Library Usage
 
 ```javascript
 const { portToProc, procToPort } = require("portproc");
