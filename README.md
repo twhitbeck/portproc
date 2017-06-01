@@ -37,8 +37,8 @@ portproc :3000
 ```javascript
 const { portToProc, procToPort } = require("portproc");
 
-const pid = portToProc(3000)  // The PID of the process using port 3000
-const port = procToPort(54321)  // The port that process '54321' is currently using
+const pid = portToProc(3000);  // The PID of the process using port 3000
+const port = procToPort(54321);  // The port that process '54321' is currently using
 ```
 
 ## Contributing
