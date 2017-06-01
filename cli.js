@@ -3,6 +3,7 @@ const program = require("commander");
 const chalk = require("chalk");
 
 const { portToProc, procToPort } = require("./index");
+const config = require("./package.json");
 
 let id;
 let input;
@@ -24,7 +25,7 @@ const print_output = output => {
 };
 
 program
-    .version("1.0.1")
+    .version(config.version)
     .arguments("<:port|pid>")
     .action(input => {
         id = input;
