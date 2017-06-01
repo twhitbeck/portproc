@@ -1,6 +1,11 @@
+"use strict";
+
 const cp = require("child_process");
-const { flow } = require("lodash/util");
-const { endsWith, startsWith } = require("lodash/string");
+const flow = require("lodash/util").flow;
+const lodashString = require("lodash/string");
+
+const endsWith = lodashString.endsWith;
+const startsWith = lodashString.startsWith;
 
 // split a string up by line breaks
 const splitLines = string => string.split("\n");

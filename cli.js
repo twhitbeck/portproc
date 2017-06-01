@@ -1,9 +1,11 @@
 #!/usr/bin/env node
+"use strict";
+
 const program = require("commander");
 const chalk = require("chalk");
 
-const { portToProc, procToPort } = require("./index");
 const config = require("./package.json");
+const portproc = require("./index");
 
 let id;
 let input;
@@ -40,9 +42,9 @@ if (!id) {
 if (id[0] === ":") {
     input = parseInt(id.slice(1), 0);
     isPort = true;
-    portToProc(input).then(print_output);
+    portproc.portToProc(input).then(print_output);
 } else {
     input = parseInt(id, 0);
     isPort = false;
-    procToPort(input).then(print_output);
+    portproc.procToPort(input).then(print_output);
 }
