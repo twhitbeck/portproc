@@ -12,6 +12,9 @@
     "network",
     "utility"
   ],
+  "scripts": {
+    "lint": "eslint index.js"
+  },
   "author": "Daniel Baker (https://github.com/coffeedoughnuts)",
   "license": "MIT",
   "dependencies": {
@@ -21,8 +24,5 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0"
-  },
-  "bin": {
-    "portproc": "cli.js"
   }
 }
